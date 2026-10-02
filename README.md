@@ -62,8 +62,12 @@ Repositorio; `Microsoft.EntityFrameworkCore.Design` na Web e na Api (é o que o
 comando `dotnet ef` precisa); `Microsoft.EntityFrameworkCore.Tools` na Api (é o
 que faz o `Update-Database` funcionar no Visual Studio); `Microsoft.AspNetCore.OpenApi`
 na Api (gera a documentação OpenAPI); `Scalar.AspNetCore` na Api (a tela gráfica
-para ver e testar os endpoints). O projeto roda em .NET 9, por compatibilidade
-com as máquinas do laboratório.
+para ver e testar os endpoints).
+
+O projeto é de .NET 9, por compatibilidade com as máquinas do laboratório, e
+roda em máquina com **.NET 9 ou .NET 10**: a Web e a Api têm a opção
+`RollForward` no `.csproj`, que faz o sistema usar o .NET 10 quando o 9 não
+estiver instalado. Não é preciso mudar nada no projeto.
 
 ## Como rodar pela primeira vez
 

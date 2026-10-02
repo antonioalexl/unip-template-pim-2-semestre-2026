@@ -20,6 +20,8 @@
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
+    <!-- Roda no .NET 9; se a máquina só tiver o .NET 10, usa o 10 sem precisar mudar nada. -->
+    <RollForward>Major</RollForward>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
